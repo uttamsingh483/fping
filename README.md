@@ -2,6 +2,7 @@
 
 This is a simple C program that allows you to ping a range of IP addresses and find all pingable address(fping).
 
+**Note**- this is the substitute of fping for windows.
 ## Usage
 
 Compile the program using a C compiler:
