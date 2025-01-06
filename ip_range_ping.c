@@ -91,7 +91,7 @@ int main(int argc, char *argv[]) {
     Sleep(10000);
     WaitForMultipleObjects(MAX_THREADS, threads, TRUE, INFINITE);
     system("cat tmp/192.168.* | grep Reply | grep bytes | awk '{print substr($3, 1, length($3)-1)}'");
-    system("arp -a");
+    system("bash ./mac_lookup.sh");
     system("rm -rf tmp");
 
     // system("arp -a | grep \"  192\" | awk '{print $1,$2}' | while read ip mac; do echo -n \"$ip $mac \"; curl -s https://api.macvendors.com/$mac; sleep 1; echo \"\"; done");
